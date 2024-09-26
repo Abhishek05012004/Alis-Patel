@@ -38,12 +38,11 @@ const Home = () => {
       </div>
       <div className="right">
         <div className="img" data-aos="fade-up-left" data-aos-duration="1000">
-          {!imageLoaded && <div className="loading-spinner">Loading...</div>}
+          {!imageLoaded && <div className="loading-spinner"></div>}
           <img
             src={`/assets/${hero.imgSrc}`}
             alt="alis"
-            onLoad={() => setImageLoaded(true)}
-            style={{ display: imageLoaded ? "block" : "none" }}
+            
           />
         </div>
       </div>
